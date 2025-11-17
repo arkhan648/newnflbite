@@ -13,8 +13,7 @@
 
   <link rel="canonical" href="https://nflbite.wiki">
   <link rel="icon" href="/favicon.png" type="image/x-icon">
-	<!-- Link to the Web App Manifest -->
-    <link rel="manifest" href="/manifest.json">
+	
     
     <!-- Theme color for Chrome on Android -->
     <meta name="theme-color" content="#0078ff">
@@ -164,7 +163,7 @@
 
   <!-- Performance: Load main stylesheet asynchronously -->
   <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="style.css"></noscript>
+  <noscript><link rel="stylesheet" href="/style.css"></noscript>
   
   <!-- Google Analytics -->
  <!-- Google tag (gtag.js) -->
@@ -449,7 +448,7 @@ alt="Crackstreams Alternatives" style="width:100%; height:auto;">
   <!-- ***** NEW ARTICLE SECTION ENDS HERE ***** -->
 </main>
  
-<script src="script.js" defer></script>
+<script src="/script.js" defer></script>
 
 <!-- Footer -->
 <footer>
@@ -498,25 +497,15 @@ alt="Crackstreams Alternatives" style="width:100%; height:auto;">
     </div>
 </div>
 
-	<script src="bookmark-prompt.js" defer></script>
+	
 
-    <script defer>
-      // Register the service worker
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js').then(registration => {
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-          }, err => {
-            console.log('ServiceWorker registration failed: ', err);
-          });
-        });
-      }
-    </script>
+    
 
 
 </body>
 
 </html>
+
 
 
 
